@@ -1,6 +1,6 @@
 node default {
   file {
-    '/root/README',
-    
+    '/root/README':
+      ensure => file,
   }
 }
