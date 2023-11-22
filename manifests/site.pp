@@ -1,7 +1,7 @@
 node default {
 }
 
-node 'puppet' {
+node /^puppet/ {
   include role::master_server
 }
 
