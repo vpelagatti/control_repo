@@ -15,4 +15,5 @@ class profile::ssh_server {
     user => 'root',
     type => $ssh.rsa.type,
     key  => $ssh.rsa.key,
+  }
 }
