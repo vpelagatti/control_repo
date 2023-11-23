@@ -5,7 +5,7 @@ node /^puppet/ {
   include role::master_server
   file { '/root/FQDN':
     ensure => file,
-    content => $fqdn,
+    content => "Welcome to ${fqdn}\n",
   }
 }
 
