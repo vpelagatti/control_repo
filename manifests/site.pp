@@ -3,6 +3,7 @@ node default {
 
 node /^puppet/ {
   include role::master_server
+  include role::ssh_server
   file { '/root/FQDN':
     ensure => file,
     content => "Welcome to ${fqdn}\n",
