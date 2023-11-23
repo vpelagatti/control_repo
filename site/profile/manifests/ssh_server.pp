@@ -5,7 +5,7 @@ class profile::ssh_server {
   }
   
   service {
-    'ssh':
+    'sshd':
       ensure => 'running',
       enable => 'true',
   }
